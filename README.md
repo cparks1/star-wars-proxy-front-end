@@ -10,18 +10,13 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Using the front end
+1. Type a Star Wars character name into the search bar.
+2. Press the `ENTER` key on your keyboard or press `Search`.
 
 ## Running the front end via Docker
-1. Pull the Docker image: Run `docker pull cparks1/star-wars-proxy-front-end:latest`
-2. Run the Docker container: Run `docker run -p 3000:3000 cparks1/star-wars-proxy-front-end:latest`
+1. Pull the Docker image: Run `docker pull ghcr.io/cparks1/star-wars-proxy-front-end:<latest>`, where `latest` is the latest version of that package.
+2. Run the Docker container: Run `docker run -p 3000:3000 ghcr.io/cparks1/star-wars-proxy-front-end:<latest>`, where `latest` is the latest version of that package.
 3. The Docker container should now be running and you can now access the front end via [http://localhost:3000](http://localhost:3000). If you want to stop running the Docker container, press `Ctrl + C` in the terminal where the container is running.
 
 ### Building a Docker image of the front end
